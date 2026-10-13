@@ -142,6 +142,7 @@ function handle_termination() {
     read -r -p "File name to write: " OUTPATH
   fi
   write_lines "${OUTPATH}"
+  echo
   echo "added ${#ROW_LINES[@]} lines to ${OUTPATH}" >&2
   exit 0
 }
