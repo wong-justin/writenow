@@ -118,6 +118,10 @@ function check_dependency() {
     exit 1
   fi
 }
+# aka: 
+# needs() {
+#   command -v "$1" > /dev/null || { >&2 printf "%s is required- not installed or in PATH; %s\n" "$1" "${@:2}"; return 1; }
+# }
 
 # Write ROW_LINES in an output file
 # Arguments: output file name
